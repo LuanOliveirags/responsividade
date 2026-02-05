@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!--
+    ETAPA 1 · Estrutura base do documento HTML responsável por renderizar toda a landing page.
+    Mantém apenas um ponto de entrada e referencia diretamente os arquivos essenciais do projeto.
+-->
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luan Gs - Analista de Sistemas</title>
+    <link rel="icon" type="image/png" href="img/icon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/1-responsive.css">
+    <link rel="stylesheet" href="css/2-preloader.css">
+    <link rel="stylesheet" href="css/sec_generic.css">
+    <link rel="stylesheet" href="css/3-header_hero.css">
+    <link rel="stylesheet" href="css/4-rodape.css">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Raleway:wght@300&display=swap" rel="stylesheet"/>
+    <!-- Fonte principal e folha de estilos -->
+</head>
+
+<body>
+        <!-- ETAPA 1 · Pré-carregamento da identidade visual -->
+    <div id="preloader">
+        <div class="preloader-content">
+            <div class="loader-emblem" aria-hidden="true" style="display: flex; flex-direction: column; align-items: center; gap: 0;">
+                <div style="width: 180px; height: 180px; border-radius: 50%; background: radial-gradient(circle, rgba(0,246,255,0.18) 0%, rgba(0,246,255,0.04) 70%, transparent 100%); display: flex; align-items: center; justify-content: center; margin-bottom: 0.5em; animation: preloader-glow 2.2s ease-in-out infinite alternate;">
+                    <img src="img/logo.png" alt="Luan GS Analista de Sistemas" style="width: 110px; max-width: 80vw; filter: drop-shadow(0 0 32px var(--primary)); opacity: 0.95; animation: preloader-fadein 1.2s;">
+                </div>
+            </div>
+            <div class="loader-text" style="text-align: center; margin-top: 0;">
+                <h2 style="font-size: 2.2rem; letter-spacing: 0.18em; color: var(--primary); font-weight: 700; margin-bottom: 0.1em; animation: preloader-fadein 1.5s;">Usuário</h2>
+                <p style="font-size: 1.1rem; color: #b8c7cc; letter-spacing: 0.25em; margin-top: 0.2em; animation: preloader-fadein 2s;">Profissão</p>
+            </div>
+            <style>
+            @keyframes preloader-glow {
+                0% { box-shadow: 0 0 32px 0 rgba(0,246,255,0.18), 0 0 0 0 transparent; }
+                100% { box-shadow: 0 0 64px 16px rgba(0,246,255,0.28), 0 0 0 0 transparent; }
+            }
+            @keyframes preloader-fadein {
+                from { opacity: 0; transform: translateY(24px); }
+                to { opacity: 1; transform: translateY(0); }
+            }
+            </style>
+        </div>
+    </div>
+    <!-- ETAPA 2 · Cabeçalho fixo com navegação -->
+    <header class="header">
+        <nav class="navigation">
+            <a href="#inicio" class="logo">
+                <img src="img/logo.png" width="200" height="50" alt="user Marsan Personal Trainer">
+            </a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#inicio">Início</a></li>
+            </ul>
+        </nav>
+    </header>           
+
+    <!-- ETAPA 3 · Hero com destaque da marca -->
+    <section class="hero-section" id="inicio">
+        <div class="hero-overlay"></div>
+        <div class="hero-content-user">
+            <div class="hero-content">
+                <h1 class="brand-name">Usuário</h1>
+                <div class="brand-subtitle">Profissão</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 1 · Fundo branco -->
+    <section class="section-white">
+        <div class="container">
+            <h2 class="section-title">Disponível</h2>
+            <p>Esta seção está pronta para uso. Adicione seu conteúdo aqui.</p>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 2 · Fundo preto -->
+    <section class="section-black">
+        <div class="container">
+            <h2 class="section-title">Disponível</h2>
+            <p>Esta seção está pronta para uso. Adicione seu conteúdo aqui.</p>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 3 · Fundo branco -->
+    <section class="section-white">
+        <div class="container">
+            <h2 class="section-title">Disponível</h2>
+            <p>Esta seção está pronta para uso. Adicione seu conteúdo aqui.</p>
+        </div>
+    </section>
+
+
+    <!-- ETAPA 8 · Rodapé institucional -->
+    <footer class="footer">
+        <img src="img/logo.png" width="50" alt="Luan Gs" class="footer-logo">
+        <p>&copy; 2020 Luan Gs - Analista de sistemas | Todos os direitos reservados</p>
+        <p> Desenvolvido por Luan Gs</p>
+    </footer>
+
+        <!-- ETAPA 10 · Scripts principais (interações e animações) -->
+        <script src="js/script-index.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
